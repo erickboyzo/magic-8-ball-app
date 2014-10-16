@@ -24,13 +24,13 @@ public class EightBall extends ActionBarActivity implements SensorEventListener 
 	int sensorCounter = 1;
 	int sensorCounter1 = 0;
 	Vibrator v;
-	String[] responses = { "As if", "Ask Me If I Care",
+	String[] responses = { "Why Of Course", "Ask Me If I Care",
 			"Dumb Question Ask Another", "Forget About It", "Get A Clue",
 			"In Your Dreams", "Not A Clue", "Not A Chance", "Obviously",
-			"Oh Please, Sure", "That's Ridiculous", "Well Maybe",
-			"What Do You Think?", "Whatever", "Who Cares?",
+			"Where There's A Will There's A Way", "That's Ridiculous", "May Baby Jesus Help You",
+			"I Believe You Can", "Whatever Floats Your Boat", "Oh Lord",
 			"Yeah And I'm The Pope", "Yeah Right", "You Wish",
-			"You've Got To Be Kidding" };
+			"You've Got To Be Kidding Me" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
