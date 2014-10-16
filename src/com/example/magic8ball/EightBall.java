@@ -52,6 +52,13 @@ public class EightBall extends ActionBarActivity implements SensorEventListener 
 					}
 				});
 
+		if (savedInstanceState != null) {
+			String retrievedResponse = savedInstanceState.getString("Response");
+			if (retrievedResponse != null) {
+				message.setText(retrievedResponse);
+			}
+		}
+
 	}
 
 	@Override
@@ -59,6 +66,14 @@ public class EightBall extends ActionBarActivity implements SensorEventListener 
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle state) {
+		String savedResponse = message.getText().toString();
+		state.putString("Response", savedResponse);
+		super.onSaveInstanceState(state);
+
 	}
 
 	@Override
